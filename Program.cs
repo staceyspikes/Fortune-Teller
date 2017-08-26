@@ -25,11 +25,11 @@ namespace FortuneTeller
             string lastName = Console.ReadLine();
             
 
-            Console.WriteLine("How old are you?");
+             Console.WriteLine("How old are you?");
             int age =int.Parse(Console.ReadLine());
            
 
-            Console.WriteLine("What is your birth month? Please type integer");
+             Console.WriteLine("What is your birth month? Please type integer.");
             int birthMonth = int.Parse(Console.ReadLine());
           
 
@@ -98,11 +98,11 @@ namespace FortuneTeller
             {
                 modeTransport = " the newest sports car";
             }
-           else if (favoriteColor =="green")
+            else if (favoriteColor == "green")
             {
                 modeTransport = " a bicycle";
             }
-           else if (favoriteColor == "blue")
+            else if (favoriteColor == "blue")
             {
                 modeTransport = " an unsinkable boat";
             }
@@ -113,6 +113,10 @@ namespace FortuneTeller
             else if (favoriteColor == "violet")
             {
                 modeTransport = " your own private jet! You lucky duck";
+            }
+            else if (favoriteColor == "help")
+            {
+                modeTransport = "your very own unicycle! Get excited!";
             }
 
             string moneyInBank ="";
@@ -128,7 +132,7 @@ namespace FortuneTeller
             {
                 moneyInBank = "$3 dollars";
             }
-            else if  (birthMonth < 1 && birthMonth > 12)
+            else if  (birthMonth < 1 || birthMonth > 12)
             {
                 moneyInBank = "$0 dollars";
             }
@@ -137,7 +141,7 @@ namespace FortuneTeller
             Console.WriteLine(" If you are not scared, press enter!:");
             Console.ReadLine();
 
-            Console.WriteLine(firstName + " " + lastName + " " +  "you will retire in" + " " +retireTime + " " + "years, with" +" " +moneyInBank + " " + "in the bank." + " \n " +"On the bright side you will have a vacation home" + " " +vacaySpot + " " + " and be driving" + " " +modeTransport + "\n " + "Hope you enjoyed your fortune!");
+            Console.WriteLine(firstName + " " + lastName + " " +  "you will retire in" + " " +retireTime + " " + "years, with" +" " +moneyInBank + " " + "in the bank." + " \n " +"On the bright side you will have a vacation home" + " " +vacaySpot + " " + " and be driving" + " " +modeTransport   + "\n " + "Hope you enjoyed your fortune!");
             
             
 
